@@ -1,0 +1,300 @@
+/* For Calculator */
+
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Black+Ops+One&family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Francois+One&family=Kdam+Thmor+Pro&family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Nova+Square&family=Saira+Extra+Condensed:wght@100;200;300;400;500;600;700;800;900&family=Vina+Sans&display=swap");
+
+
+.container {
+  border: 1px solid #cccccc;
+  box-shadow: 10px 10px 30px 0px rgba(0, 0, 0, 0.749);
+  border-radius: 20px;
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 435px;
+  height: 500px;
+  background-image: url("https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExeGEwc2hmZXFsZW91OXRmanhlemRwaDJmdjB1bTlxODlpdDd3MGl2NyZlcD12MV9naWZzX3NlYXJjaCZjdD1n/XAe9aDBIv3arS/giphy.gif");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.keys {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  font-family: "Saira Extra Condensed", sans-serif;
+  grid-gap: 10px;
+  padding: 10px;
+  margin: auto;
+}
+
+.button {
+  font-family: "Saira Extra Condensed", sans-serif;
+  height: 60px;
+  padding: 5px;
+  border-radius: 11px;
+  border: 1px solid #c4c4c4;
+  font-size: 2rem;
+  color: #00ffa3;
+  background-color: rgb(255 255 255 / 13%);
+  -webkit-backdrop-filter: blur(2px);
+  backdrop-filter: blur(4px);
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.05),
+    inset 0 1px 0 0 rgba(255, 255, 255, 0.45),
+    inset 0 -1px 0 0 rgba(255, 255, 255, 0.15),
+    0 1px 0 0 rgba(255, 255, 255, 0.15);
+  text-shadow: 2px 2px 3px rgb(4 4 4);
+  transition: 0.5s;
+}
+
+.button:hover {
+  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(10px);
+  border-color: white;
+  transition: 0.3s;
+}
+
+.operator {
+  font-family: "Saira Extra Condensed", sans-serif;
+  color: orange;
+  font-size: 34px;
+  font-weight: bolder;
+  background-color: rgba(255, 255, 255, 0.4);
+  -webkit-backdrop-filter: blur(2px);
+  backdrop-filter: blur(2px);
+  border-radius: 15px;
+  border-color: white;
+  transition: 0.5s;
+}
+
+.operator:hover {
+  transition: 0.3s;
+  background-color: rgb(255 255 255 / 26%);
+  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
+  color: #000000;
+  border-color: orange;
+}
+
+.clear {
+  font-family: "Saira Extra Condensed", sans-serif;
+  background-color: #ff000a17;
+  border-color: #b0353a;
+  color: #fff;
+  font-weight: bolder;
+  font-size: larger;
+  width: 87px;
+  height: 45px;
+  border-radius: 7px;
+  margin-top: 8px;
+  margin-left: 10px;
+  margin-right: 10px;
+  -webkit-backdrop-filter: blur(2px);
+  backdrop-filter: blur(4px);
+  transition: 0.5s;
+}
+
+.clear:hover {
+  transition: 0.3s;
+  background-color: #f1737736;
+  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
+  color: red;
+
+}
+
+.equal-sign {
+  font-family: "Saira Extra Condensed", sans-serif;
+  background-color: #25a8e029;
+  border-color: #25a8e0;
+  -webkit-backdrop-filter: blur(2px);
+  backdrop-filter: blur(2px);
+  color: #fff;
+  transition: 0.5s;
+}
+
+.equal-sign:hover {
+  background-color: #25a8e029;
+  -webkit-backdrop-filter: blur(45px);
+  backdrop-filter: blur(45px);
+  border-color: cyan;
+  transition: 0.3s;
+}
+
+.screen {
+  font-family: "Saira Extra Condensed", sans-serif;
+  background-color: #abdbe761;
+  -webkit-backdrop-filter: blur(4px);
+  backdrop-filter: blur(4px);
+  justify-content: left;
+  color: black;
+  font-size: medium;
+  width: 89%;
+  height: 30%;
+  padding: 10px 10px 10px 5px;
+  margin: auto;
+  margin-bottom: 10px;
+  margin-left: 15px;
+  height: 38px;
+  font-size: 36px;
+  border: 2px solid snow;
+  border-radius: 12px;
+  text-align: right;
+  transition: 0.5s;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+  transition: 0.5s;
+}
+
+/* For Clock and Date */
+
+@import url("https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Francois+One&family=Kdam+Thmor+Pro&family=Nova+Square&family=Vina+Sans&display=swap");
+
+.bodyc {
+  width: fit-content;
+  font-family: "Black Ops One", sans-serif;
+}
+
+.clock {
+  border: 1px solid #01ff70;
+  color: white;
+  border-radius: 10px;
+  margin-right: 16px;
+  width: 63%;
+  -webkit-backdrop-filter: blur(7px);
+  backdrop-filter: blur(7px);
+  transition: 0.5s;;
+}
+
+#Date {
+  font-size: 14px !important;
+  text-align: center;
+  padding-top: 15px;
+  -webkit-backdrop-filter: blur(2px);
+  backdrop-filter: blur(2px);
+}
+
+.clockb {
+  background-color: #00ffff00;
+  border-radius: 10px;
+  border: #14edcf 1px solid;
+  margin-right: 8px;
+  width: 47%;
+  margin-left: 16px;
+  display: flex;
+  -webkit-backdrop-filter: blur(2px);
+  backdrop-filter: blur(6px);
+  transition: 0.5s;
+}
+
+.clockb p {
+  list-style: none;
+  display: flex;
+  font-size: 27px;
+  padding-left: 6px;
+  color: ghostwhite;
+  margin-top: 8px;
+  -webkit-backdrop-filter: blur(2px);
+  backdrop-filter: blur(2px);
+  transition: 0.5s;
+}
+
+.clockf {
+  display: flex;
+  height: 10%;
+}
+
+/* For Mobile Devices */
+
+@media only screen and (max-width: 600px) {
+  .container {
+    width: 360px;
+    height: 650px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .keys {
+    grid-template-columns: repeat(4, 1fr);
+    font-size: 1.5rem;
+    margin-top: 18px;
+  }
+
+  .flex {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 6px;
+    margin-top: 16px;
+  }
+  .button {
+    height: 50px;
+    font-size: 1.5rem;
+  }
+
+  .operator {
+    font-size: 1.5rem;
+    height: 50px;
+    font-weight: bolder;
+  }
+  .clear {
+    width: 80px;
+    height: 40px;
+    font-size: 1.2rem;
+  }
+  .equal-sign {
+    height: 50px;
+    font-size: 1.5rem;
+  }
+
+  .screen {
+    height: 70px;
+    width: 310px;
+    transition: 0.5s;
+    margin-top: 10px;
+    font-size: 60px;
+  }
+
+  .clear {
+    height: 50px;
+    font-size: larger;
+    border-radius: 50px;
+  }
+
+  /* For Clock and Date */
+  .clock {
+    font-size: 16px;
+    width: 265px;
+    height: 50px;
+    font-size: 16px;
+    margin-top: 15px;
+    margin-bottom: 0px;
+    padding-top: 13px;
+    padding-bottom: 7px;
+    padding-left: 29px;
+    padding-right: 29px;
+    margin-left: 17px;
+  }
+  .clockb {
+    width: 238px;
+    height: 50px;
+    font-size: 21px;
+    margin-top: 0px;
+    margin-bottom: 5px;
+    padding-top: 18px;
+    padding-bottom: 5px;
+    padding-left: 87px;
+  }
+  .clockb p {
+    font-size: 20px;
+    padding-left: 10px;
+  }
+  .clockf {
+    display: block;
+    height: auto;
+    margin-top: 5px;
+  }
+}

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Frosted Glass Calculator</title>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="shortcut icon" href="https://cdn.dribbble.com/userupload/10554725/file/original-54b70d84b90211cee72efb81636ce9ae.jpg?resize=1024x768&vertical=center" type="image/x-icon">
+</head>
+
+<body>
+
+  
+
+    <div class="container">
+
+      <br>
+
+      <table>
+
+        <div colspan="3">
+          <input disabled type='' id='result' class='screen' title="Calculator result"  placeholder="0">
+        </div>
+
+        <div class="clockf">
+          <div class="clockb bodyc">
+
+            <p id="hours">05</p>
+            <p id="point">:</p>
+            <p id="min">20</p>
+            <p id="point">:</p>
+            <p id="sec">30</p>
+
+          </div>
+          <div class="clock bodyc">
+            <div id="Date">Sunday 26 November 2023</div>
+
+          </div>
+
+        </div>
+
+        <div class="flex">
+          <div>
+            <input type='button' value='A C' onclick="clearScreen()" class="clear" />
+          </div>
+
+          <div>
+            <input type='button' value='⌫' onclick="backspace()" class="clear" />
+          </div>
+        </div>
+      </table>
+
+      <div class="keys">
+
+        <input type="button" value="7" class="button" onClick="display('7')"></input>
+
+        <input type="button" value="8" class="button " onClick="display('8')"></input>
+
+        <input type="button" value="9" class="button" onClick="display('9')"></input>
+
+        <input type="button" value="/" class="operator" onClick="display('/')"></input>
+
+        <input type="button" value="4" class="button" onClick="display('4')"></input>
+
+        <input type="button" value="5" class="button" onClick="display('5')"></input>
+
+        <input type="button" value="6" class="button" onClick="display('6')"></input>
+
+        <input type="button" value="×" class="operator" onClick="display('*')"></input>
+
+        <input type="button" value="1" class="button" onClick="display('1')"></input>
+
+        <input type="button" value="2" class="button" onClick="display('2')"></input>
+
+        <input type="button" value="3" class="button" onClick="display('3')"></input>
+
+        <input type="button" value="-" class="operator" onClick="display('-')"></input>
+
+        <input type="button" value="0" class="button" onClick="display('0')"></input>
+
+        <input type="button" value="." class="button" onClick="display('.')"></input>
+
+        <input type="button" value="=" class="button equal-sign" onClick="solve()"></input>
+
+        <input type="button" value="+" class="operator" onClick="display('+')"></input>
+
+      </div>
+
+    </div>
+
+    <script  src="./script.js"></script>
+  
+</body>
+
+</html>
